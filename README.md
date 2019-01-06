@@ -3,7 +3,7 @@
 Team List is a simple React.Js component with Ajax features that allows it to import Json Data and display it in a bootstrap Gird with a column size of 3.
 
 <p align="center">
-<img width="100" height="100" src="hhttps://github.com/raedsalah/Team-List-react/blob/master/src/img/ezgif.com-gif-maker.gif" alt="Team Card">
+<img width="100" height="100" src="https://github.com/raedsalah/Team-List-react/blob/master/src/img/ezgif.com-gif-maker.gif" alt="Team Card">
 </p>
 
 ## Installation
