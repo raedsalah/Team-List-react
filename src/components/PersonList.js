@@ -37,7 +37,8 @@ class PersonList extends React.Component {
     if (error) {
       return (
         <div>
-          Error: {error.message}
+          Error:{" "}
+          {error.message + " if json returned 0, error from randomuser.org"}
           {console.log(items)}
         </div>
       );
