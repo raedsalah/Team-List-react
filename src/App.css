@@ -11,6 +11,7 @@
 .person img {
   border-radius: 50%;
   border: 0.1rem solid #03a9f4;
+  height: 150px;
 }
 
 .person h4,

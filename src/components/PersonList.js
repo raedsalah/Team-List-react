@@ -53,10 +53,9 @@ class PersonList extends React.Component {
               imgSrc={item.picture.large}
               Title={item.name.title}
               FName={item.name.first}
-              Email={item.email}
+              JobDesc="Web Developer"
             >
-              This is the description however the api does not have any
-              description
+              Hello Hackers, this is the card description
             </Person>
           ))}
         </div>
