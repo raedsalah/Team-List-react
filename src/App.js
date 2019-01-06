@@ -3,17 +3,14 @@ import "./App.css";
 import PersonList from "./components/PersonList";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      error: null,
-      isLoaded: false,
-      items: []
-    };
-  }
+  state = {
+    error: null,
+    isLoaded: false,
+    items: []
+  };
 
   componentDidMount() {
-    fetch("https://randomuser.me/api/")
+    fetch("https://randomuser.me/api/?inc=gender,name,email,id&results=5")
       .then(res => res.json())
       .then(
         result => {
@@ -42,13 +39,13 @@ class App extends Component {
       return <div>Loading...</div>;
     } else {
       return (
-        <ul>
+        <div>
           {items.map(item => (
-            <li key={item.gender}>
+            <div className="person" key={item.id.name + item.name.first}>
               {item.name.first} {item.email}
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       );
     }
   }
