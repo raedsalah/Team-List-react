@@ -8,7 +8,9 @@ class App extends Component {
     return (
       <div>
         <NavBar Title="Team List" />
-        <PersonList />
+        <div className="container-fluid">
+          <PersonList />
+        </div>
       </div>
     );
   }

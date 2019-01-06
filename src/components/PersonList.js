@@ -10,7 +10,7 @@ class PersonList extends React.Component {
 
   componentDidMount() {
     fetch(
-      "https://randomuser.me/api/?inc=gender,name,email,id,picture&results=5"
+      "https://randomuser.me/api/?inc=gender,name,email,id,picture&results=8"
     )
       .then(res => res.json())
       .then(
@@ -35,12 +35,17 @@ class PersonList extends React.Component {
   render() {
     const { error, isLoaded, items } = this.state;
     if (error) {
-      return <div>Error: {error.message}</div>;
+      return (
+        <div>
+          Error: {error.message}
+          {console.log(items)}
+        </div>
+      );
     } else if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
       return (
-        <div>
+        <div className="row">
           {items.map(item => (
             <Person
               className="person"
