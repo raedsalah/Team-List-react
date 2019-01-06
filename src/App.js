@@ -10,7 +10,9 @@ class App extends Component {
   };
 
   componentDidMount() {
-    fetch("https://randomuser.me/api/?inc=gender,name,email,id&results=5")
+    fetch(
+      "https://randomuser.me/api/?inc=gender,name,email,id,picture&results=5"
+    )
       .then(res => res.json())
       .then(
         result => {
@@ -42,6 +44,7 @@ class App extends Component {
         <div>
           {items.map(item => (
             <div className="person" key={item.id.name + item.name.first}>
+              <img src={item.picture.large} alt="" />
               {item.name.first} {item.email}
             </div>
           ))}
