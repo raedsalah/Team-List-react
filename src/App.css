@@ -15,7 +15,6 @@
 .person h4 {
   text-transform: capitalize;
   margin: 0.5rem 0;
-  letter-spacing: 0.15rem;
   color: teal;
 }
 .person:hover {
