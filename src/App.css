@@ -1,25 +1,32 @@
 .person {
   padding: 15px 10px 15px 10px;
   margin: 25px 0 25px 0;
-  background: #eeeeee;
+  background: #fafafa;
   transition: all 0.3s linear;
   border-radius: 20px;
   text-align: center;
-  border: 1px solid #eeeeee;
+  border: 1px solid #fafafa;
+  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.3);
 }
 .person img {
   border-radius: 50%;
-  border: 0.1rem solid teal;
+  border: 0.1rem solid #03a9f4;
 }
 
-.person h4 {
+.person h4,
+.person h5 {
   text-transform: capitalize;
   margin: 0.5rem 0;
-  color: teal;
+  color: #03a9f4;
+}
+.person p {
+  text-justify: auto;
+  font-size: 12px;
+  color: #212121;
 }
 .person:hover {
-  border: 1px solid #212121;
-  -webkit-box-shadow: 0px 0px 29px -5px rgba(199, 199, 199, 1);
-  -moz-box-shadow: 0px 0px 29px -5px rgba(199, 199, 199, 1);
-  box-shadow: 0px 0px 29px -5px rgba(199, 199, 199, 1);
+  box-shadow: 0 40px 260px rgba(255, 0, 0, 0.1),
+    0 40px 130px rgba(250, 100, 100, 0.2),
+    -80px -40px 230px rgba(0, 200, 250, 0.15),
+    80px 40px 230px rgba(120, 120, 255, 0.15);
 }
