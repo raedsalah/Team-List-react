@@ -7,9 +7,10 @@ const Person = props => {
         <img src={props.imgSrc} alt="" />
         <div>
           <h4>{props.Title + " " + props.FName}</h4>
-          <h4>{"JOB"}</h4>
+          <h4>{"JOB Title"}</h4>
+          <h5>{props.Email}</h5>
+          <p>{props.children}</p>
         </div>
-        {props.Email}
       </div>
     </div>
   );

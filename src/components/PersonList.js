@@ -49,7 +49,10 @@ class PersonList extends React.Component {
               Title={item.name.title}
               FName={item.name.first}
               Email={item.email}
-            />
+            >
+              This is the description however the api does not have any
+              description
+            </Person>
           ))}
         </div>
       );
