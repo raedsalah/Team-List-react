@@ -2,6 +2,8 @@
 
 Team List is a simple React.Js component with Ajax features that allows it to import Json Data and display it in a bootstrap Gird with a column size of 3.
 
+![Example](src\img\ezgif.com-gif-maker.gif)
+
 ## Installation
 
 Make Sure you have React installed [React](https://github.com/facebook/react) to be able to run and test Team List.
