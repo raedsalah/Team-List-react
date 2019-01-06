@@ -53,6 +53,7 @@ class PersonList extends React.Component {
               imgSrc={item.picture.large}
               Title={item.name.title}
               FName={item.name.first}
+              Email={item.email}
               JobDesc="Web Developer"
             >
               Hello Hackers, this is the card description

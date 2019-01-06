@@ -1,8 +1,8 @@
 import React from "react";
 
 const NavBar = props => (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
-    <a className="navbar-brand" href="#">
+  <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a className="navbar-brand" href="/">
       {props.Title}
     </a>
     <button
@@ -20,7 +20,7 @@ const NavBar = props => (
       <ul className="navbar-nav mr-auto">
         <li className="nav-item active">
           <a className="nav-link" href="https://github.com/raedsalah">
-            <span className="badge badge-info">
+            <span className="badge badge-warning">
               Raed Salah <i className="fab fa-github" />
             </span>
           </a>
@@ -30,7 +30,7 @@ const NavBar = props => (
             className="nav-link"
             href="https://github.com/raedsalah/Team-List-react"
           >
-            <span className="badge badge-info">
+            <span className="badge badge-warning">
               Git Repo <i className="fas fa-code-branch" />
             </span>
           </a>
