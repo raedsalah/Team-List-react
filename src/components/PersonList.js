@@ -43,10 +43,19 @@ class PersonList extends React.Component {
         </div>
       );
     } else if (!isLoaded) {
-      return <div>Loading...</div>;
+      return (
+        <div>
+          <img
+            src="https://cdn.dribbble.com/users/597558/screenshots/1998465/comp-2.gif"
+            alt="loading"
+            height="100"
+          />
+        </div>
+      );
     } else {
       return (
         <div className="row">
+          {console.log(items)}
           {items.map(item => (
             <Person
               className="person"
